@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+         <div class="card-header">
+            <h3 class= "card-title" id="title">Todo APP 2</h3>
+         </div>
+
+           <ul class="task-list">
+            <li class="task">Gorev 1</li>
+            <li class="task">Gorev 2</li>
+            <li class="task">Gorev 3</li>
+           </ul>
+
+           <ul class="task-list-2">
+            <li class="task">Gorev 1</li>
+            <li class="task">Gorev 2</li>
+            <li class="task">Gorev 3</li>
+           </ul>
+    <script>
+     let tasklist;
+
+      // tasklist = document.getElementsByClassName("task"); 
+       tasklist = document.querySelectorAll(".task-list li ");
+
+       for(let i=0; i < tasklist.length; i++ ){
+              tasklist[i].style.color = "green";
+              tasklist[i].style.fontSize = "30px";
+              tasklist[i].innerText = "Listeler hacklendi";
+              tasklist[i].innerHTML = "<i>inner htmllendi<i>";
+       }
+     console.log(tasklist);
+    </script>
+</body>
+</html>
